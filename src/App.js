@@ -72,7 +72,8 @@ function App() {
       <button onClick={() => convert()}>Fix text</button>
 
       {htmlResult.length > EMPTY_LIST && (
-        <div className="div__result"
+        <div
+          className="div__result"
           dangerouslySetInnerHTML={{ __html: htmlResult }}
         ></div>
       )}
